@@ -1,0 +1,45 @@
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    position: relative;
+    margin: 0 20px;
+    align-items: center;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  nav .dropdown a:after {
+    content: "\25be";
+    font-size: 25px;
+    display: inline-block;
+    margin-left: 5px;
+    align-items: flex-start;
+  }
+  
+  nav .dropdown:hover a:after {
+    transform: rotate(180deg);
+  }
+  
